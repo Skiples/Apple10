@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
         if (!isPlaying) return;
         resultWindow.gameObject.SetActive(true);
         isPlaying = false;
+        timer.enabled = false;
+        dragSelection.enabled = false;
     }
 
 
