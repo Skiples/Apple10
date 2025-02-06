@@ -108,7 +108,7 @@ public class UIDragSelection : MonoBehaviour
 
         if (onClear == null)
             return;
-        foreach (var dict in selectedObjects)
+        foreach (var dict in selectableObjects)
             if (dict.Key.IsActive)
                 return;
         
