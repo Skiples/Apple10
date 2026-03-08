@@ -71,10 +71,12 @@ public class Apple10TextBox : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
             OnGameEnd();
         if (Input.GetKeyDown(KeyCode.D))
-            StartCoroutine(ShuffleRutine());*/        if (Input.GetKeyDown(KeyCode.X))
+            StartCoroutine(ShuffleRutine());
+        if (Input.GetKeyDown(KeyCode.X))
             PlayerPrefs.DeleteAll();
         if (Input.GetKeyDown(KeyCode.Z))
             Debug.Log($"{SaveManager.I.GetData(EnumData.IsTutorialEnd, 0)} /{PlayerPrefs.HasKey(nameof(EnumData.IsTutorialEnd))}");
+        */
         onClickHint = false;
     }
     private void OnEnable()
