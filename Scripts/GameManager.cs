@@ -66,6 +66,7 @@ public class GameManager : Singleton<GameManager>
 
         //resultWindow.gameObject.SetActive(false);
 
+        scoreTxt.color = ThemeManager.Instance.currentTheme.textMain;
         isPause = false;
         usedHint = false;
     }
